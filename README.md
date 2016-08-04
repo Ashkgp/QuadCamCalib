@@ -103,13 +103,13 @@ Edit cameracalibrator.launch file accordingly and PtamFixParams.yaml according t
 Example 
 cameracalibrator.launch
 <code>
-	<launch>
-    	<node name="cameracalibrator" pkg="ptam" type="cameracalibrator" clear_params="true" output="screen" >
-	    	<remap from="image" to="/camera/image_mono" />
-      	      <remap from="pose" to="pose"/>
-	 	   <rosparam file="$(find ptam)/PtamFixParams.yaml"/>
-    	</node>
-	</launch>
+	< launch>
+    	< node name="cameracalibrator" pkg="ptam" type="cameracalibrator" clear_params="true" output="screen" >
+	    	< remap from="image" to="/camera/image_mono" />
+      	      < remap from="pose" to="pose"/>
+	 	   < rosparam file="$(find ptam)/PtamFixParams.yaml"/>
+    	</ node>
+	</ launch>
 
 </code>
 

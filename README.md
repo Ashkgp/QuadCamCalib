@@ -52,7 +52,7 @@ Take the pics and click on calibrate to calibrate the camera.
 Click save to save the camera configurations.
 
 
-OcamCalib - Matlab
+<B>OcamCalib - Matlab</B>
 
 Install Matlab and download the OcamCalib source from 
 
@@ -80,7 +80,7 @@ Click "Save" to save the .mat file.
 
 
 
-PTAM Calib
+<B>PTAM Calib</B>
 
 clone the package in your ROS working directory
 <code>
@@ -127,7 +127,7 @@ View all the images and save the camera info once error is minimum.
 
 
 
-Stereo Calibration Using TOOLBOX CALIB - MATLAB
+<B>Stereo Calibration Using TOOLBOX CALIB - MATLAB</B>
 
 
 Install Matlab and download the TOOLBOX CALIB source from 

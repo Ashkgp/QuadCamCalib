@@ -1,4 +1,4 @@
-Camera Calibration - Mono Camera
+<B>Camera Calibration - Mono Camera</B>
 
 First we need to create a camera node and publish the images on the master.
 
@@ -38,7 +38,7 @@ run the file using
 You should have camera running and publishing the images.
 
 
-cameracalibration - ROS
+<B>cameracalibration - ROS</B>
 
 We use ROS inbuilt cameracalibrator node to calibrate our camera.
 

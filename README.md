@@ -10,16 +10,16 @@ install usb_camera using
 go to working directory and create a launch file named camera.launch 
 
 <code>
-	< launch>
-  	 	 < node name="camera" pkg="usb_cam" type="usb_cam_node" clear_params="true" output="screen">
-    	    < param name="video_device" value="/dev/video#ID"/>
-        	< param name="image_width" value="640"/>
-	        < param name="image_height" value="480"/>
-    	    < param name="framerate" value="60"/>
-        	< param name="pixel_format" value="yuyv" /> 
- 	       < param name="brightness" value="30"/>
-    	</ node>
-	</ launch>
+	```<launch>
+  	 	 <node name="camera" pkg="usb_cam" type="usb_cam_node" clear_params="true" output="screen">
+    	    <param name="video_device" value="/dev/video#ID"/>
+        	<param name="image_width" value="640"/>
+	        <param name="image_height" value="480"/>
+    	    <param name="framerate" value="60"/>
+        	<param name="pixel_format" value="yuyv" /> 
+ 	       <param name="brightness" value="30"/>
+    	</node>
+	</launch>```
 </code>
  
 /dev/video#ID denotes device ID of your connected camera.
@@ -103,13 +103,13 @@ Edit cameracalibrator.launch file accordingly and PtamFixParams.yaml according t
 Example 
 cameracalibrator.launch
 <code>
-	< launch>
-    	< node name="cameracalibrator" pkg="ptam" type="cameracalibrator" clear_params="true" output="screen" >
-	    	< remap from="image" to="/camera/image_mono" />
-      	      < remap from="pose" to="pose"/>
-	 	   < rosparam file="$(find ptam)/PtamFixParams.yaml"/>
-    	</ node>
-	</ launch>
+	```<launch>
+    	<node name="cameracalibrator" pkg="ptam" type="cameracalibrator" clear_params="true" output="screen" >
+	    	<remap from="image" to="/camera/image_mono" />
+      	      <remap from="pose" to="pose"/>
+	 	   <rosparam file="$(find ptam)/PtamFixParams.yaml"/>
+    	</node>
+	</launch>```
 
 </code>
 
